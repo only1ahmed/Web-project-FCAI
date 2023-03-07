@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Add new student</title>
+
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo_fci.png" alt="Logo" width="120" height="120"/>
+            <nav class="navigationBar">
+                <li> <a href="syncedHomePage.htm">Home</a></li>
+                <li class="navBar-options">
+                    <a href="#" class="options-btn">Options</a>
+                    <ul>
+                        <li> <a href="#"> Add new student</a></li>
+                        <li><a href="#"> View students</a></li>
+                    </ul>
+                </li>
+
+                <li class="navBar-account">
+                    <a href="#" class="account-btn">Account</a>
+                </li>
+            </nav>
+        </header>
+
+        <h1><center>Add New Student</center></h1>
+        <br><br><br>
+        <form>
+            <div class="add_new">
+                <center>
+                    <label>Name : </label>
+                    <input type="text" placeholder="Enter Student's name">
+                    <br><br>
+                    <label>ID : </label>
+                    <input type="text" placeholder="Enter Student's ID">
+                    <br><br>
+                    <label for="level">Level : </label>
+                    <input type="number" id="level" name="level" min="1" max="4">
+                    <br><br>
+                    <label>Status : </label>
+                    <select name = "Status">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <br><br>
+                    <label>Date of birth : </label>
+                    <input type="date" >
+                    <br><br>
+                    <label>Department</label>
+                    <select name="department">
+                        <option value="CS">Computer Science</option>
+                        <option value="IS">Information System</option>
+                        <option value="AI">Artificial Intelligence</option>
+                        <option value="DS">Decision Support</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="none" selected>None</option>
+                    </select>
+                    <br><br>
+                    <label>GPA : </label>
+                    <input type="text" placeholder="Enter Student's GPA">
+                    <br><br>
+                    <label>Email : </label>
+                    <input type="email" placeholder="Enter Student's email">
+                    <br><br>
+                    <label>Gender : </label>
+                    <select name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <br><br>
+                    <label for="phone">Phone number: </label>
+                    <input type="tel" id="phone" name="phone" pattern="(01)[0,1,2,5][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+                    <br><br><br><br>
+                    <input type="submit">
+                </center>
+
+
+            </div>
+        </form>
+    </body>
+</html>
