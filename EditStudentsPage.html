@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>This is My page</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo_fci.png" alt="Logo" width="120" height="120"/>
+        <nav class="navigationBar">
+            <li> <a href="syncedHomePage.htm">Home</a></li>
+            <li class="navBar-options">
+                <a href="#" class="options-btn">Options</a>
+                <ul>
+                    <li> <a href="#"> Add new student</a></li>
+                    <li><a href="#"> View students</a></li>
+                </ul>
+            </li>
+
+            <li class="navBar-account">
+                <a href="#" class="account-btn">Account</a>
+            </li>
+        </nav>
+    </header>
+    <hr />
+    <center>
+        <h2>Edit student</h2>
+    </center>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="EditingForm">
+        <center>
+            <form action="syncedHomePage.htm" method="post">
+                <label for="Stname">Name</label>
+                <input id="Stname" name="name" type="text" value="Will be retrieved from DB" />
+                <br />
+                <br />
+                <label for="identifier">ID</label>
+                <input id="identifier" name="id" type="text" value="Will be retrieved from DB" maxlength="8" />
+                <br />
+                <br />
+                <label for="lvl">Level</label>
+                <input id="lvl" name="level" type="number" min="1" max="4" value="2" />
+                <br />
+                <br />
+                <label for="acOrIn">Status</label>
+                <select id="acOrIn">
+                    <option value="1">Active</option>
+                    <option value="2">Inactive</option>
+                </select>
+                <br />
+                <br />
+                <label for="DOB">Date of birth</label>
+                <input id="DOB" name="date" type="date" value="2003-09-17" />
+                <br />
+                <br />
+                <label for="Department">Department</label>
+                <select id="Department" disabled >
+                    <option value="1">CS</option>
+                    <option value="2" selected>IS</option>
+                    <option value="3">IT</option>
+                    <option value="4">AI</option>
+                    <option value="5">DS</option>
+                </select>
+                <br />
+                <br />
+                <label for="grade">GPA</label>
+                <input id="grade" name="gpa" type="number" min="0" max="4.0" value="3.5" step="0.01"/>
+                <br />
+                <br />
+                <label for="email">Email</label>
+                <input id="email" name="mail" type="email" value="TestMail@gmail.com" />
+                <br />
+                <br />
+                <label for="gender">Gender</label>
+                <select id="gender">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+                <br />
+                <br />
+                <label for="number">Phone Number</label>
+                <input id="number" name="PhNumber" type="text" value="Will be retrieved from DB"/>
+                <br />
+                <br />
+                <br />
+                <button title="Submit">Save Changes</button>
+                <button title="delete">Delete Student</button>
+            </form>
+        </center>
+    </div>
+</body>
+</html>
