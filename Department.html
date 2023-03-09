@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Assign Department</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navigationBar">
+          <li> <a href="#">Home</a></li>
+          <li class="navBar-options">
+              <a href="#" class="options-btn">Options</a>
+              <ul>
+                  <li> <a href="#"> Add new student</a></li>
+                  <li><a href="#"> View students</a></li>
+              </ul>
+          </li>
+
+          <li class="navBar-account">
+              <a href="#" class="account-btn">Account</a>
+          </li>
+      </nav>
+  </header>
+    <h1>Assign Department</h1>
+    <form action="/assign_department" method="POST">
+      <label>Student ID:</label>
+      <input type="text" id="student_id" name="student_id" required><br><br>
+      <label>Name:</label>
+      <input type="text" id="student_name" name="student_name" required><br><br>
+      <label>Department:</label>
+      <select id="department" name="department">
+        <option value="" disabled>-- Select a department --</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Information Technology">Information Technology</option>
+          <option value="Software Engineering">Software Engineering</option>
+        <option value="department1">Department 1</option>
+        <option value="department2">Department 2</option>
+        <option value="department3">Department 3</option>
+        <option value="department4">Department 4</option>
+      </select><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+
